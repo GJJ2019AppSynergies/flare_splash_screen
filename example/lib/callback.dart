@@ -18,8 +18,7 @@ class MyApp extends StatelessWidget {
           name: 'intro.flr',
           onSuccess: (_) {
             Navigator.of(context).pushReplacement(PageRouteBuilder(
-                pageBuilder: (_, __, ___) =>
-                    MyHomePage(title: 'Flutter Demo Home Page')));
+                pageBuilder: (_, __, ___) => MyHomePage(title: 'Flutter Demo Home Page')));
           },
           loopAnimation: '1',
           until: () => Future.delayed(Duration(seconds: 1)),
@@ -65,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.display1,
+              style: Theme.of(context).textTheme.titleSmall,
             ),
           ],
         ),

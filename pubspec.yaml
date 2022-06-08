@@ -7,8 +7,11 @@ environment:
   sdk: '>=2.12.0 <3.0.0'
   flutter: ">=1.7.8 <2.0.0"
 
+publish_to: none
+
 dependencies:
-  flare_loading: ^3.0.0
+  flare_loading:
+    git: https://github.com/GJJ2019AppSynergies/flare_loading.git
   #path: '../flare_loading'
   flutter:
     sdk: flutter
